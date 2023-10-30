@@ -3,66 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Kittens - Cute Kittens Website</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f5e7d7;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            background-color: #53354a;
-            color: #f5e7d7;
-            padding: 20px 0;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin: 10px;
-        }
-        p {
-            font-size: 1.2em;
-            margin: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .kitten-img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-            border: 5px solid #53354a;
-            border-radius: 10px;
-        }
-        footer {
-            background-color: #53354a;
-            color: #f5e7d7;
-            padding: 10px 0;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Cute Kittens</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-
     <header>
-        <h1>Retro Kittens</h1>
+        <h1>Welcome to Cute Kittens</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
-        <p>Welcome to our adorable retro kittens website!</p>
-        <img class="kitten-img" src="https://via.placeholder.com/400" alt="Cute Kitten">
-        <p>Explore our collection of the cutest kittens from the good ol' days.</p>
-    </div>
+    <section id="home">
+        <h2>Adorable Kittens</h2>
+        <p>Explore the cuteness of kittens on our website. Browse through our gallery, learn more about these furry friends, and get in touch with us.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Image Gallery</h2>
+        <div class="image">
+            <img src="kitten1.jpg" alt="Cute Kitten 1">
+            <p>Fluffy Kitten</p>
+        </div>
+        <div class="image">
+            <img src="kitten2.jpg" alt="Cute Kitten 2">
+            <p>Sleepy Kitten</p>
+        </div>
+        <!-- Add more images here -->
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are passionate about kittens and want to share their cuteness with the world. Our team is dedicated to bringing joy to your day.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or want to share your adorable kitten photos with us, please don't hesitate to get in touch:</p>
+        <address>
+            Email: <a href="mailto:contact@cutekittens.com">contact@cutekittens.com</a><br>
+            Phone: <a href="tel:+1234567890">123-456-7890</a>
+        </address>
+    </section>
 
     <footer>
-        <p>&copy; 2023 Retro Kittens - All rights reserved</p>
+        <p>&copy; 2023 Cute Kittens. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
