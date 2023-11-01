@@ -1,13 +1,119 @@
 <html>
-  <head>
-    <title>
-      Welcome to Angela's webpage full of cute kittens!
-    </title>
-  </head>
-  <body>
-    <h1>
-      hello!
-    </h1>
-  </body>
-</html>
+	<head>
+		<title>Angela's Website</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation bar in sage green */
+.topnav {
+  overflow: hidden;
+  background-color: #87ae73;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ccdcc3;
+  color: black;
+}
+
+</style>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+</div>
+
+<style>
+.accordion {
+  background-color: #ccdcc3;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #87ae73; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+
+	</head>
+	<body>
+		<h1> Welcome to my website!</h1>
+		<p> Here are some cool cafes to visit around the world</p>
+
+		<h2>Countries</h2>
+
+<button class="accordion">South Korea</button>
+<div class="panel">
+	<img src="file:///Users/angelatan/Desktop/Images/greem%20cafe%20s%20korea.webp" width ="700px">
+		<a href ="https://www.instagram.com/greem_cafe/"> <br>Go to Greem Cafe</a>
+  <p>From the interior to the tableware, Greem Café, with its unique charm, makes you feel like you stepped into a cartoon. By only painting the outlines of the whitewashed furniture in black, this unique cafe, with its 2D concept, creates the illusion of being in a cartoon. If you are looking for a cafe with a peculiar atmosphere, we recommend the Greem Café in Hongdae.</p>
+</div>
+
+<button class="accordion">Greece</button>
+<div class="panel">
+	<br><img src="file:///Users/angelatan/Desktop/Images/IMG-0620.PNG" width="700px">
+		<a href ="https://www.instagram.com/littlekook_/?hl=en"> <br>Go to Little Kook</a>
+  <p>Looking for the most Instagramable café in Athens? I’ve got you covered! One of the first things I do when heading to a new city is hop on TikTok and search for ‘Hidden gems’ and ‘Unusual things to do’ in that area. And that’s how I found Little Kook in Athens.
+<br>
+This café is undeniably the most Instagram-able coffee spot in the entire city. Once you step foot into Little Kook, you’ll understand why it has gained such a dedicated following of locals and tourists alike. It’s not just a café; it’s an experience. So, make sure your phone is fully charged and your filters are on point because your feed is about to get a serious dose of colour and crazy.
+</p>
+</div>
+
+<button class="accordion">Luxembourg</button>
+<div class="panel">
+	<br><img src="file:///Users/angelatan/Desktop/Images/IMG-0621.JPG" width="700x">
+		<a href ="https://www.instagram.com/konrad.cafe/?hl=en"> <br> Go to Konrad Cafe & Bar</a>
+  <p>Born as a vintage clothing shop & Cafè. Serving coffees & delicious cakes. Over the years is been the Cafè that has brought to luxembourg original events such as open mic, stand up comedy, theatre performances and much more. Konrad is the real outstanding original Cafè & bar. It has a unique vibe very rare to find somewhere else in the city!</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+	
+
+	</body>
+</html>
